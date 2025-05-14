@@ -1,22 +1,13 @@
 <!DOCTYPE html>
-<html lang="ru">
+<html>
 <head>
   <meta charset="UTF-8">
-  <title>Автоаудио</title>
+  <title>Мой сайт с музыкой</title>
 </head>
 <body>
-  <h1>Добро пожаловать!</h1>
-  <button id="playButton">▶ Включить музыку</button>
+  <h1>Привет, друзья!</h1>
+  <button onclick="document.getElementById('my-audio').play()">▶️ Воспроизвести музыку</button>
 
-  <audio id="myAudio" src="https://docs.google.com/uc?export=download&id=1DHM7px1skzepMikyXbylnWwbqZnz_dDu"></audio>
-
-  <script>
-    const btn = document.getElementById('playButton');
-    const audio = document.getElementById('myAudio');
-
-    btn.addEventListener('click', () => {
-      audio.play();
-    });
-  </script>
+  <audio id="my-audio" src="music.mp3"></audio>
 </body>
 </html>
